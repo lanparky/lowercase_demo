@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink D:\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Documents and Settings\Administrator\Application Data\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Documents and Settings\\Administrator\\Application Data\\npm-cache\\lowercase_demo\\0.0.1\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package.tgz
+13 verbose folder .
+14 info prepublish lowercase_demo@0.0.1
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Documents and Settings\Administrator\Application Data\npm-cache\1f1177db-tar.lock
+17 silly lockFile 889acea5-lowercase-demo-0-0-1-package-tgz tar://C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package.tgz
+18 verbose lock tar://C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package.tgz C:\Documents and Settings\Administrator\Application Data\npm-cache\889acea5-lowercase-demo-0-0-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 889acea5-lowercase-demo-0-0-1-package-tgz tar://C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package.tgz
+22 silly lockFile 889acea5-lowercase-demo-0-0-1-package-tgz tar://C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package.tgz
+23 silly lockFile 8d64c15e-che-lowercase-demo-0-0-1-package C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package
+24 verbose lock C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package C:\Documents and Settings\Administrator\Application Data\npm-cache\8d64c15e-che-lowercase-demo-0-0-1-package.lock
+25 silly lockFile 8d64c15e-che-lowercase-demo-0-0-1-package C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package
+26 silly lockFile 8d64c15e-che-lowercase-demo-0-0-1-package C:\Documents and Settings\Administrator\Application Data\npm-cache\lowercase_demo\0.0.1\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'lowercase_demo',
+29 silly publish   version: '0.0.1',
+29 silly publish   description: 'A demo package',
+29 silly publish   main: 'lowercase.js',
+29 silly publish   directories: { test: 'test' },
+29 silly publish   keywords: [ 'demo', 'lowercase' ],
+29 silly publish   author: { name: 'lanparky' },
+29 silly publish   license: 'MIT',
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/lanparky/lowercase_demo' },
+29 silly publish   engines: { node: '>=v0.10.32' },
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   readme: 'lowercase\r\n========================\r\n\r\nA demo package of lowercase\r\n\r\n```{bash}\r\nnpm install lowercase_demo\r\n```\r\n\r\n## author\r\n\r\nlanparky\r\n\r\n## License\r\n\r\nMIT',
+29 silly publish   gitHead: '7d6606e86b35d72cf324956f2b55f3b4b0815def',
+29 silly publish   bugs: { url: 'https://github.com/lanparky/lowercase_demo/issues' },
+29 silly publish   homepage: 'https://github.com/lanparky/lowercase_demo',
+29 silly publish   _id: 'lowercase_demo@0.0.1',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '2b2be27f816b7f6166031124244b12c11dac1254',
+29 silly publish   _from: '.' }
+30 verbose request where is /lowercase_demo
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id af5c388b2a7188a5
+33 verbose url raw /lowercase_demo
+34 verbose url resolving [ 'https://registry.npmjs.org/', './lowercase_demo' ]
+35 verbose url resolved https://registry.npmjs.org/lowercase_demo
+36 verbose request where is https://registry.npmjs.org/lowercase_demo
+37 info trying registry request attempt 1 at 01:37:31
+38 http PUT https://registry.npmjs.org/lowercase_demo
+39 http 403 https://registry.npmjs.org/lowercase_demo
+40 verbose headers { date: 'Sat, 07 Mar 2015 17:37:11 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2375',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-nrt6120-NRT',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1425749831.385495,VS0,VE109',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.0.1
+42 error old={"name":"lowercase_demo","version":"0.0.1","description":"A demo package of lowercase","keywords":["demo","lowercase"],"author":{"name":"Conan Zhang","email":"bsspirit@gmail.com","url":"http://blog.fens.me"},"license":"MIT","main":"lowercase.js","bin":{"lowercase":"./bin/lowercase"},"repository":{"type":"git","url":"https://github.com/bsspirit/lowercase_demo"},"engines":{"node":">=v0.10.5"},"bugs":{"url":"https://github.com/bsspirit/lowercase_demo/issues"},"_id":"lowercase_demo@0.0.1","dist":{"shasum":"49765ce3704d5cdc93fb70e0767a347a3396536b","tarball":"http://registry.npmjs.org/lowercase_demo/-/lowercase_demo-0.0.1.tgz"},"_from":".","_npmVersion":"1.2.19","_npmUser":{"name":"bsspirit","email":"bsspirit@gmail.com"},"maintainers":[{"name":"bsspirit","email":"bsspirit@gmail.com"}]}
+42 error new={"name":"lowercase_demo","version":"0.0.1","description":"A demo package","main":"lowercase.js","directories":{"test":"test"},"keywords":["demo","lowercase"],"author":{"name":"lanparky"},"license":"MIT","repository":{"type":"git","url":"https://github.com/lanparky/lowercase_demo"},"engines":{"node":">=v0.10.32"},"readmeFilename":"README.md","readme":"lowercase\u000d\u000a========================\u000d\u000a\u000d\u000aA demo package of lowercase\u000d\u000a\u000d\u000a```{bash}\u000d\u000anpm install lowercase_demo\u000d\u000a```\u000d\u000a\u000d\u000a## author\u000d\u000a\u000d\u000alanparky\u000d\u000a\u000d\u000a## License\u000d\u000a\u000d\u000aMIT","gitHead":"7d6606e86b35d72cf324956f2b55f3b4b0815def","bugs":{"url":"https://github.com/lanparky/lowercase_demo/issues"},"homepage":"https://github.com/lanparky/lowercase_demo","_id":"lowercase_demo@0.0.1","scripts":{},"_shasum":"2b2be27f816b7f6166031124244b12c11dac1254","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"lanparky","email":"1119541314@qq.com"},"maintainers":[{"name":"lanparky","email":"1119541314@qq.com"}],"dist":{"shasum":"2b2be27f816b7f6166031124244b12c11dac1254","tarball":"http://registry.npmjs.org/lowercase_demo/-/lowercase_demo-0.0.1.tgz"}}: lowercase_demo
+42 error     at RegClient.<anonymous> (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (D:\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 5.1.2600
+45 error command "D:\\nodejs\\\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd D:\nodejs_workspace\nodejs-package
+47 error node -v v0.10.32
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
